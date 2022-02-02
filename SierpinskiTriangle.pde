@@ -11,9 +11,12 @@ public void draw()
 {
   background(0);
   sierpinski(x, y, len);
-  //len += 50;
-  if (len >= 1200){
+  len -= 50;
+  if (len > 1200){
     len = 600; 
+  }
+  if (len < 600){
+    len = 1200; 
   }
   
 }
